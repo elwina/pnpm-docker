@@ -43,5 +43,5 @@ jobs:
               with:
                   context: .
                   push: true
-                  tags: 14-alpine
+                  tags: ${{ steps.meta.outputs.tags }}
                   labels: ${{ steps.meta.outputs.labels }}
